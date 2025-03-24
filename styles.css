@@ -53,7 +53,7 @@ a:hover {
     background-color: #3a2a1d;
     padding: 15px 30px;
     border-bottom: 2px solid #d2aa6b;
-    flex-shrink: 0; /* Prevent header from shrinking */
+    flex-shrink: 0;
 }
 
 .logo-container {
@@ -90,7 +90,7 @@ a:hover {
 #container {
     display: flex;
     flex: 1;
-    overflow: hidden; /* Ensure container doesn't scroll */
+    overflow: hidden;
 }
 
 /* Navigation Styles */
@@ -101,7 +101,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     color: #f9f5f0;
-    flex-shrink: 0; /* Prevent nav from shrinking */
+    flex-shrink: 0;
 }
 
 .nav-header {
@@ -158,7 +158,7 @@ a:hover {
 #content {
     background-color: #f9f5f0;
     flex: 1;
-    overflow-y: auto; /* Allow content to scroll */
+    overflow-y: auto;
     padding: 0;
     scrollbar-width: thin;
     scrollbar-color: #d2aa6b #f9f5f0;
@@ -207,7 +207,7 @@ a:hover {
 /* Home Page Styles */
 .hero-banner {
     position: relative;
-    height: 350px; /* Reduced height to fit viewport */
+    height: 350px;
     overflow: hidden;
 }
 
@@ -394,7 +394,7 @@ a:hover {
 .featured-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Limit height to fit viewport */
+    max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -434,7 +434,7 @@ a:hover {
 .map-image {
     width: 100%;
     height: 100%;
-    min-height: 300px; /* Reduced height */
+    min-height: 300px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -595,7 +595,7 @@ address {
     padding: 20px;
     text-align: center;
     border-top: 2px solid #d2aa6b;
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
 }
 
 .footer-social {
@@ -622,103 +622,4 @@ address {
 .copyright p {
     font-size: 0.9rem;
     margin-bottom: 0;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 992px) {
-    .about-content {
-        flex-direction: column;
-    }
-    
-    .menu-items {
-        grid-template-columns: 1fr;
-    }
-    
-    .features {
-        flex-direction: column;
-    }
-    
-    .feature-card {
-        min-width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #container {
-        flex-direction: column;
-    }
-    
-    #navigation {
-        width: 100%;
-        flex-direction: row;
-        overflow-x: auto;
-        padding: 10px;
-    }
-    
-    .nav-header {
-        display: none;
-    }
-    
-    #navigation ul {
-        display: flex;
-        padding: 0;
-    }
-    
-    #navigation ul li {
-        margin-right: 10px;
-    }
-    
-    #navigation ul li a {
-        padding: 10px 15px;
-        border-left: none;
-        border-bottom: 3px solid transparent;
-    }
-    
-    #navigation ul li a:hover, #navigation ul li a.active {
-        border-left-color: transparent;
-        border-bottom-color: #d2aa6b;
-    }
-    
-    .hero-banner {
-        height: 250px;
-    }
-    
-    .overlay h2 {
-        font-size: 2rem;
-    }
-    
-    .overlay p {
-        font-size: 1.2rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .brand-text h1 {
-        font-size: 1.8rem;
-    }
-    
-    .brand-text h2 {
-        font-size: 1rem;
-    }
-    
-    .contact-container, .location-container {
-        flex-direction: column;
-    }
-    
-    .intro-text h3 {
-        font-size: 1.5rem;
-    }
-    
-    .intro-text p {
-        font-size: 1rem;
-    }
 }
